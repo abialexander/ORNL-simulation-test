@@ -1,0 +1,7 @@
+ <!-- CRYOSTAT -->
+
+
+  <constant name="cryostat_height"   value="177.8"/>
+  <constant name="cryostat_width"   value="95.25"/>
+  <constant name="cryostat_thickness"   value="2"/>
+
