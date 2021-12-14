@@ -1,0 +1,31 @@
+# This macro was generated automatically, 14/12/2021 11:51:46
+
+
+/run/verbose 1
+/random/setSeeds 1 1
+/g4simple/setReferencePhysList LBE
+ 
+/g4simple/setDetectorGDML ../geometry/main.gdml
+/g4simple/setOutputFormat hdf5
+/analysis/setFileName ../hdf5/sim-V01403A-ba-top-0r-test.hdf5
+ 
+/g4simple/setVolID Detector_PV 1
+/g4simple/recordAllSteps false
+/run/initialize
+/g4simple/listPhysVols
+ 
+/gps/particle ion
+/gps/ion 56 133 0 0
+/gps/energy 0 MeV
+/grdm/nucleusLimits 133 133 56 56
+/gps/ang/type iso
+/gps/ang/mintheta 90 deg
+/gps/ang/maxtheta 180 deg
+/gps/pos/type Volume
+/gps/pos/shape Cylinder
+/gps/pos/radius 2.5
+/gps/pos/halfz  0.05
+/gps/pos/centre 0.0 -0.0 -78.5 mm
+/gps/pos/confine Source_PV
+ 
+/run/beamOn 10000000
